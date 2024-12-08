@@ -1,0 +1,466 @@
+/* CSS Document */
+/******************************
+*****  Title: sanjagh       ****
+*****  Version: Beta 1.0.0.0 **
+*****  Author: Saeed Kh *******
+*******************************/
+@import url("assets/fonts/kalameh/import.css");
+@import url("assets/fonts/iranyekan/css/fontiran.css");
+@import url("assets/fonts/poppins/css/poppins.css");
+@import url("assets/css/loading.css");
+@import url("assets/css/loader.css");
+
+:root {
+    --color-green: #56BE89;
+	--color-green2: #31e599;
+    --color-white: #F1FAF6;
+    --color-blue: #31335D;
+    --color-black: #242539;
+    --color-grey: #EEEFF5;
+}
+
+*{
+	margin: 0px; padding: 0px;
+	box-sizing: border-box;
+	vertical-align: baseline;
+
+    font-family: iranyekan;
+}
+::placeholder {
+    color: rgba(0,0,0,0.2);
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+html{
+	scroll-behavior: smooth;
+	scrollbar-color: dark;
+}
+.clearfix:before,.clearfix:after{
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.clearfix:after{
+  clear: both;
+}
+/**************
+ * 3          *
+ * IE 6/7 only*
+ **************/
+.clearfix{
+  *zoom: 1;
+}
+
+
+
+
+#main{
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 18vh;
+}
+
+
+/* Header */
+#main .header{
+    width:100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#main .header h1{
+    font-family: "kalameh";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 90px;
+    color: #000000;
+}
+
+#main .header p{
+    font-family: iranyekan;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* Form */
+.form{
+    width: 100%;
+}
+
+.form form{
+    width: 490px; height: 60px;
+    margin: 0px auto;
+    text-align: left;
+    padding-left: 25px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.form form span{
+    font-family: "poppins";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.form form input[type="text"]{
+    width: 300px; height: 60px;
+    outline: none;
+    border: none;
+    margin-left: 25px;
+
+    font-family: "poppins";
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.form form input[type="submit"] , .form form button[type="submit"]{
+    background: #02b875;
+	display: inline-block;
+	margin: 0px 5px;
+	padding: 15px 30px;
+	vertical-align: baseline;
+
+	font-family: "iranyekan";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
+	color: #fefefe;
+	direction: rtl;
+
+	white-space: nowrap;
+	
+	outline: none;
+	border: 0;
+
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+
+	cursor: pointer;
+	border-radius: 8px;
+	box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+
+/* Response/Alert */
+.response{
+    width: 490px;
+    margin: 0px auto;
+    text-align: right;
+    direction: rtl;
+    border-radius: 8px;
+    margin-top: 20px;
+
+    /* display: flex; */
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+
+    animation: show_alert;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+}
+
+.response div{
+    /* display: inline-block; */
+    text-align: right;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.response div.response-icon{
+    background: rgb(64,192,87);
+    background: linear-gradient(0deg, rgba(64,192,87,1) 0%, rgba(78,204,99,1) 100%); 
+    padding: 20px 25px;
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.response div.response-icon i{
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.response div.response-text{
+    height: 100%;
+    flex: 1 0;
+    padding: 12px 15px;
+    padding-right: 25px;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.response div.response-close{
+    padding: 25px 25px;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    transition: all 0.3s;
+}
+
+.response div.response-close:hover{
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.response div h3{
+    font-family: "iranyekan";
+	font-size: 20px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000000;
+	direction: rtl;
+}
+
+.response div p{
+    font-family: "iranyekan";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+    text-decoration: none;
+    color: rgba(0,0,0,0.25);
+	direction: rtl;
+}
+
+.response div span{
+    font-family: "iranyekan";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+    text-decoration: none;
+    color: rgba(0,0,0,0.25);
+    direction: rtl;
+}
+
+.fail div.response-icon{
+    background: rgb(192,64,64);
+    background: linear-gradient(0deg, rgba(192,64,64,1) 0%, rgba(204,78,78,1) 100%); 
+}
+
+.info div.response-icon{
+    background: rgb(64,101,192);
+    background: linear-gradient(0deg, rgba(64,101,192,1) 0%, rgba(78,127,204,1) 100%); 
+}
+
+
+
+.overlay{
+    display: flex;
+    position: absolute;
+    top: 0px; left: 0px;
+    right: 0px; bottom: 0px;
+    width:100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.show{
+    display: flex;
+}
+
+.loading-div{
+    background: rgba(255, 255, 255, 1);
+    max-width: 450px;
+    padding: 50px 70px;
+    border-radius: 8px;
+    text-align: center;
+
+    animation: show_loading_box;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.loading-div h3{
+    font-family: "iranyekan";
+	font-size: 30px;
+	font-style: normal;
+	font-weight: normal;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+    direction: rtl;
+}
+
+.loading-div p{
+    font-family: "iranyekan";
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+    text-decoration: none;
+    color: rgba(0,0,0,0.35);
+    direction: rtl;
+}
+
+.loading-icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0px;
+}
+
+
+
+.login-overlay{
+    display: flex;
+    position: absolute;
+    top: 0px; left: 0px;
+    right: 0px; bottom: 0px;
+    width:100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /* display: none; */
+}
+
+/* #main{
+    filter: blur(10px);
+} */
+
+.login-box{
+    background: rgba(255, 255, 255, 1);
+    max-width: 450px;
+    padding: 50px 70px;
+    border-radius: 8px;
+    text-align: center;
+
+    animation: show_loading_box;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+
+
+.submit_btn{
+    background: #02b875;
+    display: inline-block;
+    margin: 0px 5px;
+    padding: 15px 30px;
+    vertical-align: baseline;
+    font-family: "iranyekan";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #fefefe;
+    direction: rtl;
+    white-space: nowrap;
+    outline: none;
+    border: 0;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.25);
+}
+
+
+
+.error_wrap{
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px 25px;
+    
+
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_wrap .error{
+    width: 100%;
+    max-width: 1280px;
+    background-color: #fefefe;
+    padding: 20px 30px;
+
+    font-family: iranyekan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #5c5c5c;
+
+    border-radius: 16px;
+    box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.15);
+}
+
+.active{
+    display: flex !important;
+}
+
+.error_wrap h2{
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 20px;
+
+    font-family: iranyekan;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    color: #c4c2c2;
+}
+
+
+
+
+@keyframes show_alert{
+    0%{
+        transform: scale(0.98)  translateY(-15px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes show_loading_box{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}

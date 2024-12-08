@@ -1,0 +1,41 @@
+/* CSS Document */
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 100;
+    src: url('eot/KalamehWeb_thin.eot');
+    src: url('eot/KalamehWeb_thin.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('woff2/KalamehWeb_thin.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('woff/KalamehWeb_thin.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('ttf/KalamehWeb_thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: normal;
+    src: url('eot/KalamehWeb_Regular.eot');
+    src: url('eot/KalamehWeb_Regular.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('woff2/KalamehWeb_Regular.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('woff/KalamehWeb_Regular.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('ttf/KalamehWeb_Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: bold;
+    src: url('eot/KalamehWeb_Bold.eot');
+    src: url('eot/KalamehWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('woff2/KalamehWeb_Bold.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('woff/KalamehWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('ttf/KalamehWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: kalameh;
+    font-style: normal;
+    font-weight: 800;
+    src: url('eot/KalamehWeb_Black.eot');
+    src: url('eot/KalamehWeb_Black.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+         url('woff2/KalamehWeb_Black.woff2') format('woff2'),  /* Chrome36+, Opera24+*/
+         url('woff/KalamehWeb_Black.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+         url('ttf/KalamehWeb_Black.ttf') format('truetype');
+}
