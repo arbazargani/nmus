@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function() {
-    // return view('app.home');
     return view('app.mangene.index');
 })->name('home');
 
@@ -12,8 +11,6 @@ Route::get('/notif/{title}', [\App\Http\Controllers\MasterController::class, 'di
 
 Route::get('/menubar', function () {
     return view('app.mangene.index');
-    // return view('app.mangene.menubar');
-
 })->name('menubar');
 
 Route::prefix('app')->group(function() {

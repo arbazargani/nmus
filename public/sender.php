@@ -1,5 +1,6 @@
 <?php
 require_once '../vendor/autoload.php';
+error_reporting(0);
 
 $config = file_get_contents("https://artstage.ir/mangene_config");
 // assuming response is something like this:

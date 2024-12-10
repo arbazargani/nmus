@@ -16,20 +16,18 @@ class NativeAppServiceProvider implements ProvidesPhpIni
     {
         Window::open('main')
         ->width(1200)
-        ->minWidth(1000)
+        ->minWidth(900)
         ->height(800)
         ->minHeight(600)
-        ->showDevTools(false);
-        // ->rememberState();
-        
+        ->showDevTools(false)
+        ->hideMenu();
 
         MenuBar::create()
         ->url(route('menubar'))
-        ->icon(storage_path('app/primer-min.png'))
+        ->icon(public_path('icon.png'))
         ->width(500)
-        ->height(300)
-        ->label('Mangene')
-        // ->alwaysOnTop()
+        ->height(200)
+        ->label('MiniMangene')
         ->showDockIcon();
     }
 

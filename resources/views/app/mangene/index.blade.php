@@ -29,12 +29,15 @@
 
 </head>
 <body>
-    <div id="main">
+    <div style="margin: 0 auto; text-align: center; padding-top: 10px">
+        <span style="color: #c2c2c2; font-size: 10px">V {{ config('nativephp.version') }}</span>
+    </div>
+    <div id="main" @if(Route::currentRouteName() == 'menubar') style="padding-top: 1vh;" @endif>
         <div class="header">
             @if(Route::currentRouteName() == 'home')
             <h1>مَنگنه زَن</h1>
-            @endif
             <p style="direction: rtl">سرویس افزودن اتوماتیک منگنه‌های رگباری <span style="font-size: 40px">📎</span></p>
+            @endif
         </div>
         <div class="form">
             <form method="POST" id="url_form" @if(Route::currentRouteName() == 'menubar') style="width: 486px;" @endif>
@@ -179,7 +182,7 @@
         <h2>Log Data:</h2>
         <div class="error">
             <pre>
-                
+
             </pre>
         </div>
     </div>
